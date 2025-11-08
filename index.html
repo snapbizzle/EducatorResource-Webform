@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educator Resource Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="zoll-cet-logo-nobg.png" alt="ZOLL CET Logo" class="logo" />
+        <h1>Educator Resource Form</h1>
+      </header>
+
+      <form id="educatorForm">
+        <!-- ACCOUNT/HOSPITAL -->
+        <section>
+          <h2>ACCOUNT/HOSPITAL</h2>
+
+          <div class="form-group hospital-name-group">
+            <label for="accountHospitalName">HOSPITAL NAME</label>
+            <input
+              type="text"
+              id="accountHospitalName"
+              name="accountHospitalName"
+            />
+          </div>
+
+          <div class="name-title-row">
+            <div class="form-group salesforce-cd-group">
+              <label for="accountContactName">SalesForce CD #</label>
+              <input
+                type="text"
+                id="accountContactName"
+                name="accountContactName"
+              />
+            </div>
+            <div class="form-group salesforce-url-group">
+              <label for="accountContactTitle"
+                >URL/Link to SalesForce Page</label
+              >
+              <input
+                type="url"
+                id="accountContactTitle"
+                name="accountContactTitle"
+              />
+            </div>
+          </div>
+
+          <div class="form-group facility-address-group">
+            <label for="facilityAddress">PRIMARY HOSPITAL ADDRESS</label>
+            <input type="text" id="facilityAddress" name="facilityAddress" />
+          </div>
+
+          <div class="form-group training-location-group">
+            <label for="trainingLocationAddress"
+              >TRAINING LOCATION ADDRESS (if different than primary)</label
+            >
+            <input
+              type="text"
+              id="trainingLocationAddress"
+              name="trainingLocationAddress"
+            />
+          </div>
+        </section>
+
+        <!-- HOSPITAL TEAM CONTACT INFORMATION -->
+        <section>
+          <h2>HOSPITAL TEAM CONTACT INFORMATION</h2>
+
+          <div class="name-title-row">
+            <div class="form-group">
+              <label for="hospitalName">NAME</label>
+              <input type="text" id="hospitalName" name="hospitalName" />
+            </div>
+            <div class="form-group">
+              <label for="hospitalTitle">Title/Department</label>
+              <input type="text" id="hospitalTitle" name="hospitalTitle" />
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="form-group">
+              <label for="hospitalEmail">EMAIL</label>
+              <input type="email" id="hospitalEmail" name="hospitalEmail" />
+            </div>
+            <div class="form-group">
+              <label for="hospitalPhone">PHONE #</label>
+              <input type="tel" id="hospitalPhone" name="hospitalPhone" />
+            </div>
+          </div>
+
+          <div class="add-contact-container">
+            <button
+              type="button"
+              id="addHospitalContact"
+              class="add-contact-btn"
+            >
+              Add Contact
+            </button>
+          </div>
+        </section>
+
+        <!-- CURRENT DEVICES/PRODUCTS -->
+        <section>
+          <h2>CURRENT DEVICES/PRODUCTS</h2>
+
+          <div class="device-grid">
+            <div class="form-group device-models-group">
+              <label for="deviceModels">DEVICE MODEL(S) IN USE</label>
+              <textarea
+                id="deviceModels"
+                name="deviceModels"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group consumables-group">
+              <label for="consumables">CONSUMABLES/PADS IN USE</label>
+              <textarea id="consumables" name="consumables" rows="3"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- ZOLL DEVICES/PRODUCTS -->
+        <section>
+          <h2>ZOLL DEVICES/PRODUCTS</h2>
+
+          <div class="device-grid">
+            <div class="form-group zoll-devices-group">
+              <label for="zollDevices">DEVICES & PRODUCTS</label>
+              <textarea id="zollDevices" name="zollDevices" rows="3"></textarea>
+            </div>
+            <div class="form-group zoll-electrodes-group">
+              <label for="zollElectrodes">ELECTRODES & DISPOSABLES</label>
+              <textarea
+                id="zollElectrodes"
+                name="zollElectrodes"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- DEVICE TESTING PROCEDURE -->
+        <section>
+          <h2>DEVICE TESTING PROCEDURE</h2>
+
+          <div class="form-group testing-policy-group">
+            <label for="testingPolicy">TESTING POLICY</label>
+            <textarea
+              id="testingPolicy"
+              name="testingPolicy"
+              rows="8"
+            ></textarea>
+          </div>
+        </section>
+
+        <!-- ZOLL DEVICE CONFIGURATION -->
+        <section>
+          <h2>ZOLL DEVICE CONFIGURATION</h2>
+
+          <div class="config-tables">
+            <table class="config-table">
+              <thead>
+                <tr>
+                  <th>Config Option</th>
+                  <th>Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Manual Mode Confirm</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="manualModeConfirm"
+                      id="manualModeConfirm"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Auto-Test Time</td>
+                  <td>
+                    <input type="text" name="autoTestTime" id="autoTestTime" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Highlight Sync</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="highlightSync"
+                      id="highlightSync"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Retain Sync</td>
+                  <td>
+                    <input type="text" name="retainSync" id="retainSync" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Display Time</td>
+                  <td>
+                    <input type="text" name="displayTime" id="displayTime" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="config-table">
+              <thead>
+                <tr>
+                  <th>Config Option</th>
+                  <th>Setting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Restart Delay</td>
+                  <td>
+                    <input type="text" name="restartDelay" id="restartDelay" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Print Auto-Test</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="printAutoTest"
+                      id="printAutoTest"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>QRS Volume</td>
+                  <td><input type="text" name="qrsVolume" id="qrsVolume" /></td>
+                </tr>
+                <tr>
+                  <td>Alarms</td>
+                  <td><input type="text" name="alarms" id="alarms" /></td>
+                </tr>
+                <tr>
+                  <td>Stop CPR Prompt</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="stopCprPrompt"
+                      id="stopCprPrompt"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="form-group config-notes-group">
+            <label for="configNotes">CONFIG NOTES</label>
+            <textarea id="configNotes" name="configNotes" rows="8"></textarea>
+          </div>
+        </section>
+
+        <!-- IN-SERVICE & CONTENT -->
+        <section>
+          <h2>IN-SERVICE & CONTENT</h2>
+
+          <div class="form-group classroom-notes-group">
+            <label for="classroomNotes">CLASSROOM NOTES</label>
+            <textarea
+              id="classroomNotes"
+              name="classroomNotes"
+              rows="8"
+            ></textarea>
+          </div>
+        </section>
+
+        <!-- HOSPITAL/CLASSROOM ACCESS -->
+        <section>
+          <h2>HOSPITAL/CLASSROOM ACCESS</h2>
+
+          <div class="form-group access-notes-group">
+            <label for="accessNotes">ACCESS NOTES</label>
+            <textarea id="accessNotes" name="accessNotes" rows="8"></textarea>
+          </div>
+        </section>
+
+        <!-- ZOLL TEAM CONTACT INFORMATION -->
+        <section>
+          <h2>ZOLL TEAM CONTACT INFORMATION</h2>
+
+          <div class="contact-entry clinical-contact-entry">
+            <div class="form-group">
+              <div class="title-display">
+                Clinical Implementation Specialist
+              </div>
+            </div>
+            <div class="contact-grid clinical-contact-grid">
+              <div class="form-group clinical-name-group">
+                <label for="zollName1">NAME</label>
+                <input type="text" id="zollName1" name="zollName1" />
+              </div>
+              <div class="form-group clinical-email-group">
+                <label for="zollEmail2">EMAIL</label>
+                <input type="email" id="zollEmail2" name="zollEmail2" />
+              </div>
+              <div class="form-group clinical-phone-group">
+                <label for="zollPhone1">PHONE #</label>
+                <input type="tel" id="zollPhone1" name="zollPhone1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-entry">
+            <div class="form-group">
+              <div class="title-display">Territory Manager</div>
+            </div>
+            <div class="contact-grid zoll-contact-grid">
+              <div class="form-group territory-name-group">
+                <label for="zollName2">NAME</label>
+                <input type="text" id="zollName2" name="zollName2" />
+              </div>
+              <div class="form-group territory-email-group phone-width">
+                <label for="zollEmail1">EMAIL</label>
+                <input type="email" id="zollEmail1" name="zollEmail1" />
+              </div>
+              <div class="form-group territory-phone-group email-width">
+                <label for="zollPhone2">PHONE #</label>
+                <input type="tel" id="zollPhone2" name="zollPhone2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="add-contact-container">
+            <button type="button" id="addZollContact" class="add-contact-btn">
+              Add ZOLL Contact
+            </button>
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit">Save Form</button>
+          <button type="reset">Reset Form</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

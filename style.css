@@ -1,0 +1,531 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2.5em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+h2 {
+  color: #3498db;
+  font-size: 1.5em;
+  margin: 30px 0 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #bdc3c7;
+  font-weight: 600;
+}
+
+#educatorForm section:nth-child(1) h2,
+#educatorForm section:nth-child(2) h2,
+#educatorForm section:nth-child(3) h2,
+#educatorForm section:nth-child(4) h2,
+#educatorForm section:nth-child(5) h2,
+#educatorForm section:nth-child(6) h2,
+#educatorForm section:nth-child(7) h2,
+#educatorForm section:nth-child(8) h2,
+#educatorForm section:nth-child(9) h2 {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 10px solid #3498db;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.hospital-name-group {
+  margin-bottom: 10px;
+}
+
+.salesforce-cd-group {
+  margin-bottom: 10px;
+}
+
+.salesforce-url-group {
+  margin-bottom: 10px;
+}
+
+.facility-address-group {
+  margin-bottom: 10px;
+}
+
+.training-location-group {
+  margin-bottom: 10px;
+}
+
+.device-models-group {
+  margin-bottom: 0;
+}
+
+.consumables-group {
+  margin-bottom: 0;
+}
+
+.zoll-devices-group {
+  margin-bottom: 0;
+}
+
+.zoll-electrodes-group {
+  margin-bottom: 0;
+}
+
+.testing-policy-group {
+  margin-bottom: 0;
+}
+
+.config-notes-group {
+  margin-bottom: 0;
+}
+
+.classroom-notes-group {
+  margin-bottom: 0;
+}
+
+.access-notes-group {
+  margin-bottom: 0;
+}
+
+.clinical-name-group {
+  margin-bottom: 0;
+}
+
+.clinical-email-group {
+  margin-bottom: 0;
+}
+
+.clinical-phone-group {
+  margin-bottom: 0;
+}
+
+.territory-name-group {
+  margin-bottom: 0;
+}
+
+.territory-email-group {
+  margin-bottom: 0;
+}
+
+.territory-phone-group {
+  margin-bottom: 0;
+}
+
+.clinical-contact-entry {
+  padding-bottom: 0;
+}
+
+.salesforce-inputs {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+
+.salesforce-field {
+  flex: 1;
+}
+
+.salesforce-field:first-child {
+  flex: 0 0 calc(100% / 3);
+}
+
+.salesforce-field:last-child {
+  flex: 0 0 calc(2 * 100% / 3);
+}
+
+label[for="trainingLocationAddress"] {
+  text-transform: none;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Grid layouts */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.zoll-contact-grid {
+  grid-template-columns: 1.3fr 1.3fr 1fr;
+}
+
+.clinical-contact-grid {
+  grid-template-columns: 1.3fr 1.3fr 1fr;
+}
+
+.name-title-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.config-tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.config-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.config-table th,
+.config-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.config-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #34495e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+}
+
+.config-table td input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+  transition: border-color 0.3s ease;
+}
+
+.config-table td input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.contact-entry {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e1e8ed;
+}
+
+.contact-entry:last-child {
+  margin-bottom: 0;
+}
+
+.add-contact-container {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.add-contact-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.add-contact-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.dynamic-contact {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e1e8ed;
+}
+
+.contact-actions {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.remove-contact-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.remove-contact-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.title-display {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Form actions */
+.form-actions {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #bdc3c7;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+button[type="reset"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .salesforce-inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .salesforce-field:first-child,
+  .salesforce-field:last-child {
+    flex: 1;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .zoll-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clinical-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name-title-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .device-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .config-tables {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .form-actions {
+    display: none;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #999;
+    background-color: white;
+  }
+}
